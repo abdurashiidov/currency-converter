@@ -35,5 +35,11 @@ body{
 }
 .box div{
     width: 100%;
-    
+
+}
+.select{
+    width: 95%;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
 }
