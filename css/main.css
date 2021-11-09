@@ -47,5 +47,9 @@ body{
     margin: 0.2em 0;
     padding: 0 1em;
     border-radius: 10px;
-    
+    border: none;
+    background: rgb(107, 230, 7);
+}
+input{
+    width: 95%;
 }
