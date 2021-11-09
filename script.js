@@ -16,10 +16,11 @@ function valute(krish, chiq){
         return input.value * dollar
     }
     else if(krish == "sum" && chiq == "rubl"){
-        return  rubl * input.value
+        return input.value * rubl 
     }
+
     if(krish == "euro" && chiq == "sum"){
-        return input.value * euro
+        return input.value * sum
     }
     else if(krish == "euro" && chiq == "dollar"){
         return input.value / dollar
@@ -29,13 +30,13 @@ function valute(krish, chiq){
     }
 
     if(krish == "rubl" && chiq == "sum"){
-        return input.value * euro
+        return input.value * sum
     }
     else if(krish == "rubl" && chiq == "dollar"){
         return input.value / dollar
     }
     else if(krish == "rubl" && chiq == "euro"){
-        return input.value / rubl
+        return input.value / euro
     }
 
 
