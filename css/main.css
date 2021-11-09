@@ -42,4 +42,10 @@ body{
     height: 40px;
     font-size: 1.2em;
     cursor: pointer;
+    outline: none;
+    color: black;
+    margin: 0.2em 0;
+    padding: 0 1em;
+    border-radius: 10px;
+    
 }
