@@ -1,13 +1,13 @@
 var btn = document.getElementById("btn");
 var input = document.getElementById("input");
 var result = document.getElementById("result");
-let kirish = document.querySelector(".kirish")
-let chiqish = document.querySelector(".chiqish")
-let javob = document.querySelector(".return")
-let dollar = 10700
-let euro = 12400
-let rubl = 150.64
-let sum = 1000
+var kirish = document.querySelector(".kirish")
+var chiqish = document.querySelector(".chiqish")
+var javob = document.querySelector(".return")
+var dollar = 10700
+var euro = 12400
+var rubl = 150.64
+var sum = 1000
 function valute(krish, chiq){
     if(krish == "sum" && chiq == "euro"){
         return input.value * euro
@@ -19,6 +19,7 @@ function valute(krish, chiq){
         return input.value * rubl 
     }
 
+
     if(krish == "euro" && chiq == "sum"){
         return input.value * sum
     }
@@ -28,6 +29,7 @@ function valute(krish, chiq){
     else if(krish == "euro" && chiq == "rubl"){
         return input.value / rubl
     }
+
 
     if(krish == "rubl" && chiq == "sum"){
         return input.value * sum
@@ -43,30 +45,8 @@ function valute(krish, chiq){
     return 10
 }
 btn.addEventListener("click", (e) => {
-    let krv = kirish.value
-    let chiqv = chiqish.value
+    var krv = kirish.value
+    var chiqv = chiqish.value
   
     javob.textContent =  valute(krv, chiqv)
 })
-
-
-// var dollars = 1700
-// var rubls = 2300
-// var euros = 1200
-// button.addEventListener("click", () => {
-// let select = document.querySelector(".form-select")
-//     let value = select.value
-//     if (value == "euro"){
-//         console.log('ok'); 
-//         sum * euros
-//         heading.textContent = sum.value*euros
-//     }
-//     else if  (value == "rubl"){
-//         sum * rubls
-//         heading.textContent = sum.value*rubls
-//     }
-//     else if  (value == "dollar"){
-//         sum * dollars
-//         heading.textContent = sum.value*dollars
-//     }
-// })
