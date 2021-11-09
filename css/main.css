@@ -31,4 +31,9 @@ body{
 
 .box{
     width: 100%;
+    display: flex;
+}
+.box div{
+    width: 100%;
+    
 }
